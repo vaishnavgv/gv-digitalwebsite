@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GV Digital Company | Modern Digital Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover { transform: scale(1.1); }
+        .floating-wa { right: 20px; background-color: #25D366; }
+        .floating-mail { right: 90px; background-color: #EA4335; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-black text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="bg-black text-white border-2 border-white px-4 py-1 font-bold text-2xl tracking-wider">
+                GV
+            </div>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-gray-400 transition">Home</a>
+                <a href="#about" class="hover:text-gray-400 transition">About Us</a>
+                <a href="#services" class="hover:text-gray-400 transition">Services</a>
+                <a href="#portfolio" class="hover:text-gray-400 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-black text-white px-6 py-4 space-y-4">
+            <a href="#home" class="block hover:text-gray-400">Home</a>
+            <a href="#about" class="block hover:text-gray-400">About Us</a>
+            <a href="#services" class="block hover:text-gray-400">Services</a>
+            <a href="#portfolio" class="block hover:text-gray-400">Portfolio</a>
+            <a href="#contact" class="block hover:text-gray-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- PAGE 1: HOME SECTION -->
+    <section id="home" class="bg-gradient-to-r from-gray-900 to-black text-white py-32 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Empowering Brands in the Digital Era</h1>
+            <p class="text-xl text-gray-300 mb-8">GV Digital Company delivers cutting-edge web development, UI/UX design, and result-oriented digital marketing strategies to scale your business.</p>
+            <a href="#contact" class="bg-white text-black font-bold px-8 py-3 rounded shadow hover:bg-gray-200 transition">Work With Us</a>
+        </div>
+    </section>
+
+    <!-- PAGE 2: ABOUT US SECTION -->
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center mb-4 tracking-wide">About GV Digital Company</h2>
+            <div class="w-16 h-1 bg-black mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Who We Are</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">We are a forward-thinking digital agency committed to driving growth, digital transformation, and sustainable market dominance for our clients across the globe.</p>
+                    <p class="text-gray-600 leading-relaxed">Our multi-disciplinary team brings years of expertise in software engineering, technical optimization, and high-impact digital storytelling.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg border-l-4 border-black">
+                    <h4 class="text-xl font-bold mb-3"><i class="fas fa-bullseye mr-2"></i> Our Mission</h4>
+                    <p class="text-gray-600 mb-6">To provide high-quality, transparent, and ROI-driven technological infrastructure and marketing assets for modern businesses.</p>
+                    <h4 class="text-xl font-bold mb-3"><i class="fas fa-eye mr-2"></i> Our Vision</h4>
+                    <p class="text-gray-600">To establish a global standard for design thinking and seamless technical integrations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 3: SERVICES SECTION -->
+    <section id="services" class="py-20 px-6 bg-gray-100">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold text-center mb-4 tracking-wide">Our Comprehensive Services</h2>
+            <div class="w-16 h-1 bg-black mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl text-black mb-4"><i class="fas fa-code"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Web & App Development</h3>
+                    <p class="text-gray-600">Custom, fast, responsive web systems built with advanced modern frameworks tailored strictly to scale operations.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl text-black mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+                    <p class="text-gray-600">Data-driven performance campaigns, SEO strategies, and search engine visibility optimizations that convert clicks into consumers.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded shadow hover:shadow-xl transition text-center">
+                    <div class="text-4xl text-black mb-4"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="text-xl font-bold mb-3">UI/UX & Branding</h3>
+                    <p class="text-gray-600">Impactful identity design, interactive interface prototypes, and user journey optimization built for lasting retention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 4: PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold text-center mb-4 tracking-wide">Our Latest Work</h2>
+            <div class="w-16 h-1 bg-black mx-auto mb-12"></div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 text-white rounded overflow-hidden shadow-lg group">
+                    <div class="p-8">
+                        <span class="text-xs uppercase tracking-widest text-gray-400 font-bold">E-Commerce Platform</span>
+                        <h3 class="text-xl font-bold mt-2 mb-4">Apex Retail Hub</h3>
+                        <p class="text-sm text-gray-300">Complete architectural redesign and integration boosting performance transformations by 45%.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 text-white rounded overflow-hidden shadow-lg group">
+                    <div class="p-8">
+                        <span class="text-xs uppercase tracking-widest text-gray-400 font-bold">Fintech Application</span>
+                        <h3 class="text-xl font-bold mt-2 mb-4">Nova Wallet</h3>
+                        <p class="text-sm text-gray-300">Clean UI infrastructure development, complex user flow map, and banking secure integration layers.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 text-white rounded overflow-hidden shadow-lg group">
+                    <div class="p-8">
+                        <span class="text-xs uppercase tracking-widest text-gray-400 font-bold">Corporate Ecosystem</span>
+                        <h3 class="text-xl font-bold mt-2 mb-4">Strata Logistics</h3>
+                        <p class="text-sm text-gray-300">Comprehensive local SEO optimization, digital branding, and customer portal web deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 5: CONTACT US SECTION -->
+    <section id="contact" class="py-20 px-6 bg-gray-100">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-4 tracking-wide">Get in Touch</h2>
+            <div class="w-16 h-1 bg-black mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Info Column -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Contact Channels</h3>
+                    <p class="text-gray-600 mb-6">Ready to begin your next project? Reach out directly via any of our communications lines below. Our corporate response desk handles all requests within 24 business hours.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-xl text-black w-8 text-center"><i class="fas fa-envelope"></i></div>
+                            <span class="text-gray-700 font-medium">gvrankawat@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="text-xl text-black w-8 text-center"><i class="fas fa-phone-alt"></i></div>
+                            <span class="text-gray-700 font-medium">+91 7426879547</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Column -->
+                <div class="bg-white p-8 rounded shadow">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea required rows="4" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-black"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-black text-white font-bold py-2 rounded hover:bg-gray-800 transition">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-8 text-center">
+        <p class="text-sm text-gray-400">&copy; 2026 GV Digital Company. All Rights Reserved.</p>
+    </footer>
+
+    <!-- FLOATING ACTIONS BUTTONS -->
+    <!-- Gmail Floating Button -->
+    <a href="mailto:gvrankawat@gmail.com" class="floating-btn floating-mail" title="Email Us">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917426879547" target="_blank" class="floating-btn floating-wa" title="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu Script Toggle -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
